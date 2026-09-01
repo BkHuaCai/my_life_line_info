@@ -1,0 +1,52 @@
+name: 🐛 反馈一个问题
+description: App 有哪里不对、闪退、显示异常
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢反馈。下面几项填得越具体，越可能一次就定位到。
+
+  - type: input
+    id: version
+    attributes:
+      label: App 版本号
+      description: 在 App 内「我的 → 联系作者 · 关于」页面能看到
+      placeholder: 1.0.6
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 手机型号与安卓版本
+      placeholder: 小米 14 / Android 14
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么操作会出现
+      description: 一步步说，包括点了哪里、填了什么
+      placeholder: |
+        1. 打开主页
+        2. 点右下角 ＋
+        3. 选「主线」
+        4. ……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你以为会发生什么，实际发生了什么
+      placeholder: 以为会保存成功回到列表，实际上弹了「日期不合法」，但我填的日期是今天
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图（可选，但很有用）
+      description: 直接把图片拖进这个框就行

@@ -1,0 +1,29 @@
+name: 💡 提一个想法
+description: 希望加什么功能、哪里用着别扭
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎。不用写得很正式，说清楚「你想干什么」比「该怎么实现」更有用。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想做的是什么事
+      description: 描述你实际遇到的场景，而不是直接说要加什么按钮——同一个需求往往有更好的做法
+      placeholder: 我想记孩子每年的身高体重，现在只能写在描述里，没法看到变化趋势
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你设想的做法（可选）
+      placeholder: 比如动态里能加几个自定义的数字字段，然后在统计页画成折线
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他补充（可选）
+      description: 别的 App 是怎么做的、参考截图等
